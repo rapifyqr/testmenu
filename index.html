@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Café App Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    <h1 class="app-title">Café Aroma</h1>
+
+    <div class="tabs">
+      <button class="tab active" onclick="showCategory('drinks')">Drinks</button>
+      <button class="tab" onclick="showCategory('snacks')">Snacks</button>
+      <button class="tab" onclick="showCategory('desserts')">Desserts</button>
+    </div>
+
+    <div class="menu-content">
+      <div class="menu-section" id="drinks">
+        <div class="item">
+          <span>Espresso</span>
+          <span>₹80</span>
+        </div>
+        <div class="item">
+          <span>Cappuccino</span>
+          <span>₹120</span>
+        </div>
+        <div class="item">
+          <span>Cold Brew</span>
+          <span>₹140</span>
+        </div>
+      </div>
+
+      <div class="menu-section hidden" id="snacks">
+        <div class="item">
+          <span>Veg Sandwich</span>
+          <span>₹90</span>
+        </div>
+        <div class="item">
+          <span>Garlic Bread</span>
+          <span>₹110</span>
+        </div>
+      </div>
+
+      <div class="menu-section hidden" id="desserts">
+        <div class="item">
+          <span>Brownie</span>
+          <span>₹120</span>
+        </div>
+        <div class="item">
+          <span>Ice Cream</span>
+          <span>₹100</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
